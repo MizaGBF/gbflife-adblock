@@ -1,0 +1,23 @@
+{
+  "name": "gbf.life ad blocker",
+  "description": "Block the alert popup",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gbf.life/"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "manifest_version": 3,
+  "action": {
+    "default_title": "gbf.life ad blocker"
+  },
+  "content_security_policy": {}
+}
